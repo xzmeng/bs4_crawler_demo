@@ -3,7 +3,6 @@ import requests
 import re
 import os
 import logging
-from multiprocessing import Pool
 
 logging.basicConfig(level=logging.INFO,
                     format='[%(asctime)s] %(levelname)s: %(message)s')
