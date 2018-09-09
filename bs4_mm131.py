@@ -7,7 +7,7 @@ import logging
 logging.basicConfig(level=logging.INFO,
                     format='[%(asctime)s] %(levelname)s: %(message)s')
 
-logging.warning('program start...')
+logging.info('program start...')
 
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 '
@@ -112,7 +112,7 @@ def download_one_girl(girl):
             with open(os.path.join(img_dir, pic_name), 'wb') as f:
                 f.write(r.content)
         else:
-            print(r.status_code)
+            logging.warning(str(r.status_code) + ' ' + img_url)
 
     logging.info('{}/{} downloaded, girl_id={}, title={}'.format(
         len(os.listdir(img_dir)), img_count, girl_id, girl_title))
@@ -128,7 +128,6 @@ def download_all():
 
 if __name__ == '__main__':
     download_all()
-
 
 
 
