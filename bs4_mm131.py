@@ -14,7 +14,8 @@ headers = {
                   '(KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
     'Referer': "http://www.mm131.com/"
 }
-SAVE_DIR = 'D:\\tmp\\mm131_bs4'
+# SAVE_DIR = 'D:\\tmp\\mm131_bs4'
+SAVE_DIR = 'D:\\tmp\\mm131_bs4_thread'
 IMG_PREFIX = 'http://img1.mm131.me/pic/'
 categories = {
         'xinggan': 'http://www.mm131.com/xinggan/',
